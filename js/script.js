@@ -19,15 +19,28 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-var myChoice= "";
-var computerChoice= "";
-var winner= "";
-var choices= ["rock", "paper", "scissors"];
-
+// var myChoice= "";
+// var computerChoice= "";
+// var winner= "";
+// var choices= ["rock", "paper", "scissors"];
+// var mychoiceIndex= 0;
+// var computerchoiceIndex= Math.random()*choices.length;
+// console.log(choices[Math.floor(computerchoiceIndex)]);
 
 //FUNCTIONS
 
+/*global $*/
 
 
 // DOCUMENT READY FUNCTION
+$(document).ready(function() {
+        $("#shoot").click(function() {
+                var choices= ["rock", "paper", "scissors"];
+                var computerchoiceIndex= Math.random()*choices.length;
+                        console.log(choices[Math.floor(computerchoiceIndex)]);
+                $(".computer").text(choices[Math.floor(computerchoiceIndex)]);
+                $(".user").text(choices[Math.floor(computerchoiceIndex)]);
+        });
+});
+
 

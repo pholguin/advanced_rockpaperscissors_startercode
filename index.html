@@ -2,18 +2,21 @@
 <html>
 
   <head>
-      <title>RPS Game</title>
-      <!-- Link CSS here -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0
--beta.2/css/bootstrap.min.css"> 
-<link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Link JQuery here -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!-- Link Javascript File here -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-      <!-- Latest compiled and minified Bootstrap CSS -->
-      
-  </head>
+     <title>RPS Game</title>
+     <!-- Link CSS here -->
+     <link rel="stylesheet" href="css/style.css">
+     <!-- Link JQuery here -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Link Javascript File here -->
+     <script src="js/script.js"></script>
+     <!-- Latest compiled and minified Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!--- Fontawesome CSS--->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+ </head>
 
   <body>
       <!-- TASK 1: In the div below. 
@@ -26,13 +29,13 @@
      -->
       
     <div class="container text-center">
-      <h1>
+      <h1 id="a">
           Rock, Paper, Scissors
       </h1>
         <p>The player will select rock, paper, or scissors.</p>
           <img src="http://static1.squarespace.com/static/595543f6b11be1695b0fdb29/t/59555414cd0f68572370bb64/1498764324553/DFP-RockPaperScissors-Black.png?format=1000w">
              <input class="user"> 
-               <button type="button">Shoot!!!</button>
+               <button id= "shoot" type="button">Shoot!!!</button>
              </input>
                    <div class="user"></div>
                      <div class="computer"></div>
